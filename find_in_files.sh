@@ -1,7 +1,7 @@
 #!/bin/sh
 MYNAME='~/my_tools/find_in_file.sh'  # Short program name for diagnostic messages.
 VERSION='1.3'
-LAST_CHANGE='2024_02_28'
+LAST_CHANGE='2024_05_22'
 # Includes support for -i -e -f -l -a -b
 # Help and debug using -h -d -v -V
 
@@ -38,7 +38,7 @@ usage () {
 
 Function: Find in files.
 Usage   : $MYNAME [-hdvV] [-f arg] ...
-Usage   : fif [-hdvV] [-f arg] ...
+Usage   : fif [-hdvV] [-cw] [-f arg] ...
 
 Options:
   -i arg   include filetype as --include=\*arg (default = *)
@@ -46,8 +46,8 @@ Options:
   -e arg   exclude filetype as --exclude=\*{arg1,arg2,...,argn} (default = no exclude)
   -f arg   find string 'arg' (required)
   -l arg   find at location 'arg' (default = ./)
-  -a arg   display 'arg' lines before (default = 0)
-  -b arg   display 'arg' lines after (default = 0)
+  -a arg   display 'arg' lines before match (default = 0)
+  -b arg   display 'arg' lines after match (default = 0)
   -w       Enable whole-word match. Default = Disable whole-word match.
   -c       Enable case-insensitive search. Default = case-sensitive search.
   -h       display this help text and exit
