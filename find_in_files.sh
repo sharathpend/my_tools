@@ -1,4 +1,7 @@
 #!/bin/sh
+
+# Author: Sharath Pendyala - spendya@ncsu.edu - sharathpawan@gmail.com
+
 MYNAME='~/my_tools/find_in_file.sh'  # Short program name for diagnostic messages.
 VERSION='1.3'
 LAST_CHANGE='2024_05_22'
@@ -38,7 +41,7 @@ usage () {
 
 Function: Find in files.
 Usage   : $MYNAME [-hdvV] [-f arg] ...
-Usage   : fif [-hdvV] [-cw] [-f arg] ...
+Usage   : $MYNAME [-hdvV] [-cw] [-f arg] ...
 
 Options:
   -i arg   include filetype as --include=\*arg (default = *)

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri May 16 23:41:51 2025
+# Process ID         : 3346054
+# Current directory  : /home/spendya/02_my_vivado_projects/scripts
+# Command line       : vivado -mode batch -source run_all_samplerz_zusp.tcl -tclargs ../samplerz_zusp/samplerz_zusp.xpr 8
+# Log file           : /home/spendya/02_my_vivado_projects/scripts/vivado.log
+# Journal file       : /home/spendya/02_my_vivado_projects/scripts/vivado.jou
+# Running On         : memnon.ece.ncsu.edu
+# Platform           : RedHatEnterprise
+# Operating System   : Red Hat Enterprise Linux release 8.10 (Ootpa)
+# Processor Detail   : Intel(R) Core(TM) i9-10900K CPU @ 3.70GHz
+# CPU Frequency      : 3700.000 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 20
+# Host memory        : 134423 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 138718 MB
+# Available Virtual  : 124402 MB
+#-----------------------------------------------------------
+source run_all_samplerz_zusp.tcl
