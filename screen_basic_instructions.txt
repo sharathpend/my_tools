@@ -1,0 +1,14 @@
+# Sreen Basic Usage
+
+# Start a screen session:
+> screen
+
+# Run your command:
+> make zusp  
+
+# Detach from the session:
+> Press Ctrl+a, then release both keys and press d.
+
+# Reattach later:
+# SSH back into the machine and run:
+> screen -r
