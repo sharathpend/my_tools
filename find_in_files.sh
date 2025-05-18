@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Author: Sharath Pendyala - spendya@ncsu.edu - sharathpawan@gmail.com
+# Author: Sharath Pendyala - sharathpawan@gmail.com
 
 MYNAME='~/my_tools/find_in_file.sh'  # Short program name for diagnostic messages.
 VERSION='1.3'

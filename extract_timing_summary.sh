@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Author: Sharath Pendyala - spendya@ncsu.edu - sharathpawan@gmail.com
+# Author: Sharath Pendyala - sharathpawan@gmail.com
 VERSION='1.0'
 
 # $1 is the .runs folder in Vivado Project

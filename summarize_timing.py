@@ -1,5 +1,5 @@
 
-# Author: Sharath Pendyala - spendya@ncsu.edu - sharathpawan@gmail.com
+# Author: Sharath Pendyala - sharathpawan@gmail.com
 
 
 import re
