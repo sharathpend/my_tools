@@ -57,9 +57,11 @@ run_vusp:
 
 ts_zusp:
 	python ~/my_tools/summarize_timing.py '$(ZUSP_RUNS_FOLDER)';
+	cat parsed_timing_summary_*
 
 ts_vusp:
 	python ~/my_tools/summarize_timing.py '$(VUSP_RUNS_FOLDER)';
+	cat parsed_timing_summary_*
 
 zusp: run_zusp ts_zusp
 

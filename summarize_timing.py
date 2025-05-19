@@ -1,5 +1,5 @@
 
-# Author: Sharath Pendyala - sharathpawan@gmail.com
+# Author: Sharath Pendyala - spendya@ncsu.edu - sharathpawan@gmail.com
 
 
 import re
@@ -116,7 +116,17 @@ def write_summary(input_filename, output_filename, timing_pass, top, top_n, debu
         print(f"DEBUG: Timing {'PASS' if timing_pass else 'FAIL'}")
         print(f"DEBUG: Writing {len(top)} results")
 
+    # Determine header line based on input filename
+    if "routed" in input_filename:
+        header_line = "Routed Result\n-------------\n\n"
+    elif "postroute_phyopt" in input_filename:
+        header_line = "Post Route Phy Opt Result\n-------------------------\n\n"
+    else:
+        header_line = "Parsed Result\n-------------\n\n"
+
     with open(output_filename, "w") as f:
+        f.write("\n")
+        f.write(header_line)
         f.write(f"Timing {'PASS' if timing_pass else 'FAIL'}\n\n")  # Blank line after PASS/FAIL
         f.write(f"Showing {top_n} closest results to timing closure (by WNS):\n")
         f.write("Impl\tWNS\tTNS\tFailing_EP\tWHS\tTHS\tHold_Failing_EP\n")
@@ -125,6 +135,7 @@ def write_summary(input_filename, output_filename, timing_pass, top, top_n, debu
             f.write(line)
             if debug:
                 print(f"DEBUG: Wrote line: {line.strip()}")
+        f.write("\n\n")
 
     if debug:
         print(f"DEBUG: Successfully wrote summary to {output_filename}")
